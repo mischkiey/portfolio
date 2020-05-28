@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Playfair+Display&family=Red+Hat+Display&family=Roboto+Mono&family=Spartan&display=swap');
 
 * {
-    filter: saturate;
+    filter: sepia(3%);
 }
 
 /* Mobile-first Approach */
@@ -11,22 +11,21 @@
 .group {
     display: flex;
     flex-direction: column;
-    border: 1px solid gray;
 }
 
 .group-row {
     display: flex;
     flex-direction: row;
-    border: 1px solid gray;
 }
 
 .item {
     flex: 1;
-    border: 1px solid gray;
+    margin-bottom: 10px;
 }
 
 .item-double {
     flex: 2;
+    margin-bottom: 10px;
 }
 
 .wrapper {
@@ -37,7 +36,8 @@
 
 .ahead-default {
     font-family: "Playfair Display", serif;
-    font-size: 16px;
+    font-size: 32px;
+    margin-bottom: 0;
     text-align: center;
 }
 
@@ -48,6 +48,14 @@ a:active { color: hsl(0 0% 45%); }
 
 .center {
     text-align: center;
+}
+
+.footer-padding {
+    padding: 2px 20px 2px 20px;
+}
+
+footer {
+    background-color: #E5E5E5;
 }
 
 .form {
@@ -61,6 +69,7 @@ form button {
 }
 
 form input {
+    height: 16px;
     margin-bottom: 10px;
     padding: 0;
     width: 100%;
@@ -69,7 +78,7 @@ form input {
 form label {
     display: block;
     font-family: "Playfair Display", serif;
-    font-size: 8px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -82,8 +91,13 @@ form textarea {
 
 .greeting {
     font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
+    font-size: 48px;
     color: #FFF;
+}
+
+hr {
+    border: 1px dashed #000;
+    margin-bottom: 20px;
 }
 
 img {
@@ -100,12 +114,15 @@ img {
 }
 
 nav {
-    background-color: #FFF;
+    background-color: #E5E5E5;
     text-align: center;
 }
 
+.padding {
+    padding: 10px 20px 10px 20px;
+}
+
 .parallax {
-    background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,12 +133,11 @@ nav {
     width: 20%;
 }
 
-
 .text-default {
     font-family: "Playfair Display", serif;
-    font-size: 8px;
+    font-size: 16px;
     text-align: justify;
-    line-height: 16px;
+    line-height: 32px;
 }
 
 /* Item-specific Styles */
@@ -139,12 +155,16 @@ nav {
     list-style-type: none;
 }
 
+nav.item {
+    margin: 0;
+}
+
 nav > ul {
     padding-left: 0px;
 }
 
 nav > ul > li > a.link-default {
-    font-size: 10px;
+    font-size: 12px;
     margin-right: 5px;
     text-decoration: none;
 }
@@ -166,8 +186,12 @@ nav > ul > li > a.link-default {
         padding: 300px;
     }
 
+    .border {
+        border: 1px solid hsl(0 0% 60%);
+    }
+
     .footer-padding {
-        padding: 50px 200px 50px 200px;
+        padding: 20px 200px 20px 200px;
     }
 
     .form {
@@ -180,10 +204,24 @@ nav > ul > li > a.link-default {
         text-align: justify;
     }
 
+    form input {
+        height: 32px;
+        margin-bottom: 10px;
+        padding: 0;
+        width: 100%;
+    }
+
     form label {
         font-family: "Playfair Display", serif;
         font-size: 16px;
         text-align: justify;
+    }
+
+    form textarea {
+        height: 128px;
+        margin-bottom: 10px;
+        padding: 0;
+        width: 100%;
     }
 
     .greeting {
@@ -194,6 +232,13 @@ nav > ul > li > a.link-default {
 
     .padding {
         padding: 100px 200px 100px 200px;
+    }
+
+    .parallax {
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .text-default {
