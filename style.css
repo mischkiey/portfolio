@@ -32,7 +32,12 @@
 
 .item-double {
     flex: 2;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.toggle-nav-group {
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper {
@@ -104,6 +109,13 @@ form textarea {
     color: #FFF;
 }
 
+.h1-item {
+    flex: 1;
+    background-color: #E5E5E5;
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
+
 hr {
     border: 1px dashed #000;
     margin-bottom: 20px;
@@ -161,6 +173,12 @@ img {
     background-image: url(images/hollywood-metro.jpg);
 }
 
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
 nav > ul {
     padding-left: 0px;
 }
@@ -172,6 +190,7 @@ nav > ul > li > a.link-default {
 }
 
 .toggle-nav-item {
+    display: inline-block;
     list-style-type: none;
 }
 
@@ -185,11 +204,21 @@ nav > ul > li > a.link-default {
 
     /* Flex Properties */
 
-    .nav-item {
+    .h1-item {
         flex: 1;
+        text-align: left;
+    }
+
+    .nav-item {
+        flex: 2;
         background-color: #E5E5E5;
-        text-align: center;
+        text-align: right;
         margin: 0;
+    }
+
+    .toggle-nav-group {
+        display: flex;
+        flex-direction: row;
     }
 
     /* Default Styles */
@@ -274,6 +303,12 @@ nav > ul > li > a.link-default {
     
 
     /* Item-specific Styles */
+
+    h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 24px;
+        margin-left: 30px;
+    }
 
     nav > ul > li > a.link-default {
         font-size: 20px;
