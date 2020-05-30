@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Playfair+Display&family=Red+Hat+Display&family=Roboto+Mono&family=Spartan&display=swap');
 
-/* Each category is in alphabetical order. */
+/* For enhanced readability: 
+Classes and selectors follow the natural flow/order of the HTML page. */
 
 * {
     filter: sepia(3%);
@@ -8,12 +9,15 @@
 
 
 
-
-/* Mobile-first Approach */
-
+/* Mobile-first Approach Start */
 
 
-/* Flex Properties */
+
+/* Flex Properties Start */
+
+.wrapper {
+    width: 100%;
+}
 
 .group {
     display: flex;
@@ -40,13 +44,87 @@
     flex-direction: column;
 }
 
-.wrapper {
-    width: 100%;
+/* Flex Properties End */
+
+.h1-item {
+    flex: 1;
+    background-color: #E5E5E5;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.nav-item {
+    flex: 1;
+    background-color: #E5E5E5;
+    text-align: center;
+    margin: 0;
+}
+
+.toggle-nav-item {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul {
+    padding-left: 0px;
+}
+
+a:link { color: #000; }
+a:visited { color: hsl(0 0% 45%); }
+a:hover { color: hsl(0 0% 75%); }
+a:active { color: hsl(0 0% 45%); }
+
+/* hsl(0 0% 60%) */
+
+.link-default {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 12px;
+}
+
+nav > ul > li > a.link-default {
+    font-size: 12px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.bg-img-header {
+    background-image: url(images/hollywood.jpg);
+}
+
+.center {
+    text-align: center;
+}
+
+.greeting {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    color: #FFF;
+}
+
+.parallax {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.padding {
+    padding: 10px 20px 10px 20px;
 }
 
 
+img {
+    width: 100%;
+}
 
-/* Default Styles */
+.portrait {
+    border-radius: 50% 50%;
+    width: 20%;
+}
 
 .ahead-default {
     font-family: "Playfair Display", serif;
@@ -55,30 +133,56 @@
     text-align: center;
 }
 
-a:link { color: hsl(0 0% 60%); }
-a:visited { color: hsl(0 0% 45%); }
-a:hover { color: hsl(0 0% 75%); }
-a:active { color: hsl(0 0% 45%); }
-
-.center {
-    text-align: center;
+hr {
+    border: 1px dashed #000;
+    margin-bottom: 20px;
 }
 
-footer {
-    background-color: #E5E5E5;
+.p-padding {
+    padding-bottom: 16px;
 }
 
-.footer-padding {
-    padding: 2px 20px 2px 20px;
+.text-default {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 32px;
+}
+
+ol {
+    padding-left: 10px;
+}
+
+.project-head-padding {
+    padding: 0px 20px 0 20px;
+}
+
+.project-padding {
+    padding: 0 20px 0 20px;
+}
+
+.project-space {
+    margin-top: 100px;
+    padding: 0 20px 0 20px;
+}
+
+.project-screenshot {
+    width: 60%;
+}
+
+.bg-img-thanks {
+    background-image: url(images/hollywood-metro.jpg);
+    margin-top: 100px;
 }
 
 .form {
     margin: 30px;
 }
 
-form button {
+form label {
+    display: block;
     font-family: "Playfair Display", serif;
-    font-size: 8px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -89,13 +193,6 @@ form input {
     width: 100%;
 }
 
-form label {
-    display: block;
-    font-family: "Playfair Display", serif;
-    font-size: 16px;
-    text-align: justify;
-}
-
 form textarea {
     height: 64px;
     margin-bottom: 10px;
@@ -103,96 +200,28 @@ form textarea {
     width: 100%;
 }
 
-.greeting {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 48px;
-    color: #FFF;
-}
-
-.h1-item {
-    flex: 1;
-    background-color: #E5E5E5;
-    text-align: center;
-    /* margin-bottom: 10px; */
-}
-
-hr {
-    border: 1px dashed #000;
-    margin-bottom: 20px;
-}
-
-img {
-    width: 100%;
-}
-
-.left {
-    text-align: left;
-}
-
-.link-default {
-    font-family: "Roboto Mono", sans-serif;
+input[type=text], #user-message {
+    font-family: "Playfair Display", monospace;
     font-size: 12px;
 }
 
-.nav-item {
-    flex: 1;
-    background-color: #E5E5E5;
-    text-align: center;
-    margin: 0;
-}
-
-.padding {
-    padding: 10px 20px 10px 20px;
-}
-
-.parallax {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.portrait {
-    border-radius: 50% 50%;
-    width: 20%;
-}
-
-.text-default {
+form button {
     font-family: "Playfair Display", serif;
-    font-size: 16px;
+    font-size: 8px;
     text-align: justify;
-    line-height: 32px;
 }
 
-/* Item-specific Styles */
-
-.bg-img-header {
-    background-image: url(images/hollywood.jpg);
+footer {
+    background-color: #E5E5E5;
 }
 
-.bg-img-thanks {
-    background-image: url(images/hollywood-metro.jpg);
+.footer-padding {
+    padding: 2px 20px 2px 20px;
 }
 
-h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    margin-bottom: 0;
-}
 
-nav > ul {
-    padding-left: 0px;
-}
 
-nav > ul > li > a.link-default {
-    font-size: 12px;
-    margin-right: 5px;
-    text-decoration: none;
-}
-
-.toggle-nav-item {
-    display: inline-block;
-    list-style-type: none;
-}
+/* Mobile First Approach End */
 
 
 
@@ -202,13 +231,18 @@ nav > ul > li > a.link-default {
 
 @media all and (min-width: 1200px) {
 
-    /* Flex Properties */
+    /* Flex Properties Start */
 
     .h1-item {
         flex: 1;
         text-align: left;
     }
 
+    .toggle-nav-group {
+        display: flex;
+        flex-direction: row;
+    }
+    
     .nav-item {
         flex: 2;
         background-color: #E5E5E5;
@@ -216,70 +250,41 @@ nav > ul > li > a.link-default {
         margin: 0;
     }
 
-    .toggle-nav-group {
-        display: flex;
-        flex-direction: row;
+    /* Flex Properties End */
+
+
+    .wrapper {
+        width: 90%;
+        margin: auto;
     }
 
-    /* Default Styles */
-
-    .ahead-default {
-        font-family: "Playfair Display", serif;
+    h1 {
+        font-family: "Cormorant Garamond", serif;
         font-size: 32px;
-        text-align: center;
-      }
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .toggle-nav-item {
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    nav > ul > li > a.link-default {
+        font-size: 20px;
+        margin-right: 30px;
+        text-decoration: none;
+    }
 
     .bg-img-header {
         background-image: url(images/hollywood.jpg);
         padding: 300px;
     }
 
-    .border {
-        border: 1px solid hsl(0 0% 60%);
-    }
-
-    .footer-padding {
-        padding: 20px 200px 20px 200px;
-    }
-
-    .form {
-        margin: 0;
-    }
-
-    form button {
-        font-family: "Playfair Display", serif;
-        font-size: 16px;
-        text-align: justify;
-    }
-
-    form input {
-        height: 32px;
-        margin-bottom: 10px;
-        padding: 0;
-        width: 100%;
-    }
-
-    form label {
-        font-family: "Playfair Display", serif;
-        font-size: 16px;
-        text-align: justify;
-    }
-
-    form textarea {
-        height: 128px;
-        margin-bottom: 10px;
-        padding: 0;
-        width: 100%;
-    }
-
     .greeting {
         font-family: "Cormorant Garamond", serif;
         font-size: 64px;
         color: #FFF;
-    }
-
-    .padding {
-        padding: 100px 200px 100px 200px;
     }
 
     .parallax {
@@ -289,6 +294,20 @@ nav > ul > li > a.link-default {
         background-size: cover;
     }
 
+    .padding {
+        padding: 100px 200px 100px 200px;
+    }
+
+    .ahead-default {
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        text-align: center;
+      }
+
+    .p-padding {
+        padding-bottom: 16px;
+    }
+
     .text-default {
         font-family: "Playfair Display", serif;
         font-size: 16px;
@@ -296,28 +315,60 @@ nav > ul > li > a.link-default {
         line-height: 32px;
     }
 
-    .wrapper {
-        width: 80%;
+    .form {
+        width: 50%;
         margin: auto;
     }
+
+    .project-head-padding {
+        padding: 100px 300px 0 300px;
+    }
+
+    .project-padding {
+        padding: 0 300px 0 300px;
+    }
+
+    .project-space {
+        margin-top: 100px;
+        padding: 0 300px 0 300px;
+    }
+
+    .project-screenshot {
+        width: 50%;
+    }
+
+    form label {
+        font-family: "Playfair Display", serif;
+        font-size: 16px;
+        text-align: justify;
+    }
     
-
-    /* Item-specific Styles */
-
-    h1 {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 24px;
-        margin-left: 30px;
+    form input {
+        height: 32px;
+        margin-bottom: 10px;
+        padding: 0;
+        width: 100%;
     }
 
-    nav > ul > li > a.link-default {
-        font-size: 20px;
-        margin-right: 30px;
-        text-decoration: none;
+    form textarea {
+        height: 128px;
+        margin-bottom: 10px;
+        padding: 0;
+        width: 100%;
     }
 
-    .toggle-nav-item {
-        display: inline-block;
-        list-style-type: none;
+    input[type=text], #user-message {
+        font-family: "Playfair Display", monospace;
+        font-size: 16px;
     }
+
+    form button {
+        font-family: "Playfair Display", serif;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .footer-padding {
+        padding: 20px 200px 20px 200px;
+    }
+
 }
