@@ -102,7 +102,7 @@ nav > ul > li > a.link-default {
 
 .greeting {
     font-family: "Cormorant Garamond", serif;
-    font-size: 48px;
+    font-size: 64px;
     color: #FFF;
 }
 
@@ -145,8 +145,11 @@ hr {
 .text-default {
     font-family: "Playfair Display", serif;
     font-size: 16px;
-    text-align: justify;
     line-height: 32px;
+}
+
+.left {
+    text-align: left;
 }
 
 ol {
@@ -183,7 +186,7 @@ form label {
     display: block;
     font-family: "Playfair Display", serif;
     font-size: 16px;
-    text-align: justify;
+    text-align: left;
 }
 
 form input {
@@ -208,7 +211,7 @@ input[type=text], #user-message {
 form button {
     font-family: "Playfair Display", serif;
     font-size: 8px;
-    text-align: justify;
+    text-align: left;
 }
 
 footer {
@@ -283,7 +286,7 @@ footer {
 
     .greeting {
         font-family: "Cormorant Garamond", serif;
-        font-size: 64px;
+        font-size: 80px;
         color: #FFF;
     }
 
@@ -311,7 +314,6 @@ footer {
     .text-default {
         font-family: "Playfair Display", serif;
         font-size: 16px;
-        text-align: justify;
         line-height: 32px;
     }
 
@@ -340,7 +342,7 @@ footer {
     form label {
         font-family: "Playfair Display", serif;
         font-size: 16px;
-        text-align: justify;
+        text-align: left;
     }
     
     form input {
@@ -365,7 +367,7 @@ footer {
     form button {
         font-family: "Playfair Display", serif;
         font-size: 16px;
-        text-align: justify;
+        text-align: left;
     }
     .footer-padding {
         padding: 20px 200px 20px 200px;
