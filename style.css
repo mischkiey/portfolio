@@ -104,6 +104,7 @@ nav > ul > li > a.link-default {
     font-family: "Cormorant Garamond", serif;
     font-size: 64px;
     color: #FFF;
+    mix-blend-mode: difference;
 }
 
 .parallax {
@@ -285,9 +286,10 @@ footer {
     }
 
     .greeting {
+        color: #FFF;
         font-family: "Cormorant Garamond", serif;
         font-size: 80px;
-        color: #FFF;
+        mix-blend-mode: difference;;
     }
 
     .parallax {
