@@ -94,6 +94,7 @@ nav > ul > li > a.link-default {
 
 .bg-img-header {
     background-image: url(images/hollywood.jpg);
+    padding: 100px;
 }
 
 .center {
@@ -176,7 +177,10 @@ ol {
 
 .bg-img-thanks {
     background-image: url(images/hollywood-metro.jpg);
+    background-position: center;
     margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 50px;
 }
 
 .form {
@@ -339,6 +343,11 @@ footer {
 
     .project-screenshot {
         width: 50%;
+    }
+
+    .bg-img-thanks {
+        background-image: url(images/hollywood-metro.jpg);
+        padding: 150px;
     }
 
     form label {
