@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Playfair+Display&family=Red+Hat+Display&family=Roboto+Mono&family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap');
 
 /* For enhanced readability: 
 Classes and selectors are arranged in the order that they appear in the HTML page. */
@@ -22,11 +22,13 @@ Classes and selectors are arranged in the order that they appear in the HTML pag
 .group {
     display: flex;
     flex-direction: column;
+
 }
 
 .group-row {
     display: flex;
     flex-direction: row;
+
 }
 
 .item {
@@ -34,28 +36,35 @@ Classes and selectors are arranged in the order that they appear in the HTML pag
     margin-bottom: 10px;
 }
 
-.item-double {
-    flex: 2;
-    margin-bottom: 0px;
+.item-start {
+    align-self: flex-start;
+}
+
+.item-end {
+    align-self: flex-end;
 }
 
 .toggle-nav-group {
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.project-group {
     display: flex;
     flex-direction: column;
 }
 
 /* Flex Properties End */
 
-.h1-item {
-    flex: 1;
-    background-color: #E5E5E5;
-    text-align: center;
-}
-
 h1 {
-    font-family: "Cormorant Garamond", serif;
+    flex: 1;
+    font-family: "Playfair Display", serif;
     font-size: 32px;
+    font-weight: 700;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .nav-item {
@@ -101,13 +110,6 @@ nav > ul > li > a.link-default {
     text-align: center;
 }
 
-.greeting {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 64px;
-    color: #FFF;
-    mix-blend-mode: difference;
-}
-
 .parallax {
     background-position: bottom;
     background-repeat: no-repeat;
@@ -117,7 +119,6 @@ nav > ul > li > a.link-default {
 .padding {
     padding: 10px 20px 10px 20px;
 }
-
 
 img {
     width: 100%;
@@ -140,8 +141,8 @@ hr {
     margin-bottom: 20px;
 }
 
-.p-padding {
-    padding-bottom: 16px;
+.partial-width {
+    width: 80%;
 }
 
 .text-default {
@@ -154,8 +155,8 @@ hr {
     text-align: left;
 }
 
-ol {
-    padding-left: 10px;
+.project-border {
+    border-right: 1px dash #000;
 }
 
 .project-head-padding {
@@ -172,7 +173,7 @@ ol {
 }
 
 .project-screenshot {
-    width: 60%;
+    width: 80%;
 }
 
 .bg-img-thanks {
@@ -235,16 +236,9 @@ footer {
 
 /* Media Queries Start */
 
-
-
 @media all and (min-width: 1200px) {
 
     /* Flex Properties Start */
-
-    .h1-item {
-        flex: 1;
-        text-align: left;
-    }
 
     .toggle-nav-group {
         display: flex;
@@ -258,19 +252,27 @@ footer {
         margin: 0;
     }
 
+    .project-group {
+        display: flex;
+        flex-direction: row;
+    }
+
     /* Flex Properties End */
 
 
     .wrapper {
-        width: 90%;
+        width: 85%;
         margin: auto;
     }
 
     h1 {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 32px;
-        margin-left: 30px;
-        margin-top: 10px;
+        align-self: center;
+        flex: 1;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0 0 0 30px;
+        text-align: left;
     }
 
     .toggle-nav-item {
@@ -287,13 +289,6 @@ footer {
     .bg-img-header {
         background-image: url(images/hollywood.jpg);
         padding: 300px;
-    }
-
-    .greeting {
-        color: #FFF;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 80px;
-        mix-blend-mode: difference;;
     }
 
     .parallax {
@@ -313,10 +308,6 @@ footer {
         text-align: center;
       }
 
-    .p-padding {
-        padding-bottom: 16px;
-    }
-
     .text-default {
         font-family: "Playfair Display", serif;
         font-size: 16px;
@@ -328,21 +319,12 @@ footer {
         margin: auto;
     }
 
-    .project-head-padding {
-        padding: 100px 300px 0 300px;
-    }
-
     .project-padding {
-        padding: 0 300px 0 300px;
-    }
-
-    .project-space {
-        margin-top: 100px;
-        padding: 0 300px 0 300px;
+        padding: 20px 50px;
     }
 
     .project-screenshot {
-        width: 50%;
+        width: 75%;
     }
 
     .bg-img-thanks {
