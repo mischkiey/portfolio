@@ -7,11 +7,7 @@ Classes and selectors are arranged in the order that they appear in the HTML pag
     filter: sepia(3%);
 }
 
-
-
 /* Mobile-first Approach Start */
-
-
 
 /* Flex Properties Start */
 
@@ -33,15 +29,6 @@ Classes and selectors are arranged in the order that they appear in the HTML pag
 
 .item {
     flex: 1;
-    margin-bottom: 10px;
-}
-
-.item-start {
-    align-self: flex-start;
-}
-
-.item-end {
-    align-self: flex-end;
 }
 
 .toggle-nav-group {
@@ -51,7 +38,7 @@ Classes and selectors are arranged in the order that they appear in the HTML pag
 
 }
 
-.project-group {
+.toggle-project-group {
     display: flex;
     flex-direction: column;
 }
@@ -88,8 +75,6 @@ a:visited { color: hsl(0 0% 45%); }
 a:hover { color: hsl(0 0% 75%); }
 a:active { color: hsl(0 0% 45%); }
 
-/* hsl(0 0% 60%) */
-
 .link-default {
     font-family: "Roboto Mono", sans-serif;
     font-size: 12px;
@@ -117,7 +102,7 @@ nav > ul > li > a.link-default {
 }
 
 .padding {
-    padding: 10px 20px 10px 20px;
+    padding: 20px;
 }
 
 img {
@@ -132,17 +117,17 @@ img {
 .ahead-default {
     font-family: "Playfair Display", serif;
     font-size: 32px;
-    margin-bottom: 0;
+    margin: 0;
     text-align: center;
 }
 
 hr {
     border: 1px dashed #000;
-    margin-bottom: 20px;
 }
 
 .partial-width {
     width: 80%;
+    margin: auto;
 }
 
 .text-default {
@@ -160,11 +145,12 @@ hr {
 }
 
 .project-head-padding {
-    padding: 0px 20px 0 20px;
+    margin: 0;
+    padding: 10px 20px 0 20px;
 }
 
 .project-padding {
-    padding: 0 20px 0 20px;
+    padding: 10px 20px;
 }
 
 .project-space {
@@ -228,11 +214,7 @@ footer {
     padding: 2px 20px 2px 20px;
 }
 
-
-
 /* Mobile First Approach End */
-
-
 
 /* Media Queries Start */
 
@@ -252,9 +234,10 @@ footer {
         margin: 0;
     }
 
-    .project-group {
+    .toggle-project-group {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     /* Flex Properties End */
@@ -317,6 +300,10 @@ footer {
     .form {
         width: 50%;
         margin: auto;
+    }
+
+    .project-head-padding {
+        padding: 100px 200px 0 200px;
     }
 
     .project-padding {
