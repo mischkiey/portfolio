@@ -3,6 +3,10 @@
 /* For enhanced readability: 
 Classes and selectors are arranged in the order that they appear in the HTML page. */
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     filter: sepia(3%);
 }
@@ -15,16 +19,14 @@ Classes and selectors are arranged in the order that they appear in the HTML pag
     width: 100%;
 }
 
-.group {
+.group-column {
     display: flex;
     flex-direction: column;
-
 }
 
 .group-row {
     display: flex;
     flex-direction: row;
-
 }
 
 .item {
@@ -35,7 +37,6 @@ Classes and selectors are arranged in the order that they appear in the HTML pag
     background-color: #E5E5E5;
     display: flex;
     flex-direction: column;
-
 }
 
 .toggle-project-group {
@@ -47,7 +48,7 @@ Classes and selectors are arranged in the order that they appear in the HTML pag
 
 h1 {
     flex: 1;
-    font-family: "Playfair Display", serif;
+    font-family: "Roboto Mono", serif;
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 0;
@@ -71,9 +72,9 @@ nav > ul {
 }
 
 a:link { color: #000; }
-a:visited { color: hsl(0 0% 45%); }
+a:visited { color: #000; }
 a:hover { color: hsl(0 0% 75%); }
-a:active { color: hsl(0 0% 45%); }
+a:active { color: hsl(0 0% 75%); }
 
 .link-default {
     font-family: "Roboto Mono", sans-serif;
@@ -110,11 +111,11 @@ img {
 }
 
 .portrait {
-    border-radius: 50% 50%;
+    border-radius: 50%;
     width: 20%;
 }
 
-.ahead-default {
+.h2-default {
     font-family: "Playfair Display", serif;
     font-size: 32px;
     margin: 0;
@@ -122,7 +123,7 @@ img {
 }
 
 hr {
-    border: 1px dashed #000;
+    border: 2px dashed #000;
 }
 
 .partial-width {
@@ -140,26 +141,13 @@ hr {
     text-align: left;
 }
 
-.project-border {
-    border-right: 1px dash #000;
-}
-
 .project-head-padding {
     margin: 0;
     padding: 10px 20px 0 20px;
 }
 
 .project-padding {
-    padding: 10px 20px;
-}
-
-.project-space {
-    margin-top: 100px;
-    padding: 0 20px 0 20px;
-}
-
-.project-screenshot {
-    width: 80%;
+    padding: 20px 0px;
 }
 
 .bg-img-thanks {
@@ -167,11 +155,11 @@ hr {
     background-position: center;
     margin-top: 100px;
     margin-bottom: 100px;
-    padding: 50px;
+    padding: 75px;
 }
 
-.form {
-    margin: 30px;
+form {
+    margin: 20px;
 }
 
 form label {
@@ -211,7 +199,7 @@ footer {
 }
 
 .footer-padding {
-    padding: 2px 20px 2px 20px;
+    padding: 2px 20px;
 }
 
 /* Mobile First Approach End */
@@ -243,30 +231,22 @@ footer {
     /* Flex Properties End */
 
 
-    .wrapper {
+    /* .wrapper {
         width: 85%;
         margin: auto;
-    }
+    } */
 
     h1 {
         align-self: center;
-        flex: 1;
-        font-family: "Roboto Mono", sans-serif;
         font-size: 28px;
         font-weight: 500;
         margin: 0 0 0 30px;
         text-align: left;
     }
 
-    .toggle-nav-item {
-        display: inline-block;
-        list-style-type: none;
-    }
-
     nav > ul > li > a.link-default {
         font-size: 20px;
         margin-right: 30px;
-        text-decoration: none;
     }
 
     .bg-img-header {
@@ -276,16 +256,13 @@ footer {
 
     .parallax {
         background-attachment: fixed;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .padding {
-        padding: 100px 200px 100px 200px;
+        padding: 100px;
     }
 
-    .ahead-default {
+    .h2-default {
         font-family: "Playfair Display", serif;
         font-size: 32px;
         text-align: center;
@@ -297,13 +274,8 @@ footer {
         line-height: 32px;
     }
 
-    .form {
-        width: 50%;
-        margin: auto;
-    }
-
     .project-head-padding {
-        padding: 100px 200px 0 200px;
+        padding: 100px 100px 0 100px;
     }
 
     .project-padding {
@@ -316,27 +288,22 @@ footer {
 
     .bg-img-thanks {
         background-image: url(images/hollywood-metro.jpg);
-        padding: 150px;
+        padding: 200px;
     }
 
-    form label {
-        font-family: "Playfair Display", serif;
-        font-size: 16px;
-        text-align: left;
+    form {
+        width: 50%;
+        margin: auto;
     }
     
     form input {
         height: 32px;
         margin-bottom: 10px;
-        padding: 0;
-        width: 100%;
     }
 
     form textarea {
         height: 128px;
         margin-bottom: 10px;
-        padding: 0;
-        width: 100%;
     }
 
     input[type=text], #user-message {
@@ -347,10 +314,10 @@ footer {
     form button {
         font-family: "Playfair Display", serif;
         font-size: 16px;
-        text-align: left;
     }
+
     .footer-padding {
-        padding: 20px 200px 20px 200px;
+        padding: 20px 200px;
     }
 
 }
