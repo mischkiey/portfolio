@@ -87,7 +87,7 @@ a:hover {
 .project-group {
     align-items: center;
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     flex-flow: column wrap;
     padding: 20px;
 }
@@ -130,6 +130,7 @@ img {
 
 hr {
     border: 2px solid #212121;
+    width: 100%;
 }
 
 form {
@@ -159,6 +160,10 @@ button {
     border-radius: 3px;
     color: #ffffff;
 }
+
+/* button:hover {
+
+} */
 
 .bg-img-head {
     background-image: url(images/hollywood.jpg);
