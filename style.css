@@ -76,6 +76,9 @@ a:hover {
     background-color: #fff3e0;
     display: flex;
     flex-flow: column wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav-group {
@@ -129,7 +132,7 @@ img {
 }
 
 hr {
-    border: 2px solid #212121;
+    border: 1px solid #ADC4D1;
     width: 100%;
 }
 
@@ -146,19 +149,20 @@ label, input, textarea, button {
 
 input {
     border: none;
-    border-bottom: 2px solid #212121;
+    border-bottom: 2px solid #ADC4D1;
 }
 
 textarea {
     border: none;
-    border-bottom: 2px solid #212121;
+    border-bottom: 2px solid #ADC4D1;
 }
 
 button {
-    background-color: #212121;
-    border: 1px solid #212121;
+    background-color: #ADC4D1;
+    border: 1px solid #ADC4D1;
     border-radius: 3px;
     color: #ffffff;
+    padding: 5px 20px;
 }
 
 button:hover {
