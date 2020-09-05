@@ -7,153 +7,136 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body class="wrapper">
 
-    <header>
-        <div class="wrapper">
-            <div class="toggle-nav-group">
-                <h1>Michelle's Portfolio</h1>
-                <nav class="nav-item">
-                    <ul>
-                        <li class="toggle-nav-item"><a href="#about-me" class="link-default">about</a></li>
-                        <li class="toggle-nav-item"><a href="#services" class="link-default">services</a></li>
-                        <li class="toggle-nav-item"><a href="#projects" class="link-default">projects</a></li>
-                        <li class="toggle-nav-item"><a href="#contact-me" class="link-default">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <header class="header-group">
+        <h1>Michelle: Developer</h1>
+        <nav class="nav-group">
+            <ul>
+                <li class="nav-item"><a href="#about-me" class="nav-link">about</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">services</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">projects</a></li>
+                <li class="nav-item"><a href="#contact-me" class="nav-link">contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="wrapper">
-        <div class="bg-img-header group-column parallax">
-        </div>
+    <div class="bg-img-head parallax">
     </div>
 
     <main>
-        <!-- <div class="wrapper"> -->
-            <section class="group wrapper">
-                <article class="center item padding">
-                    <img src="images/profile-square.jpg" alt="Profile Photo" class="portrait">
-                    <h2 class="h2-default">Hello there.</h2>
-                    <hr>
-                    <p class="left text-default">My name is Michelle, twenty-seven, and an aspiring software developer, economist, and researcher. NJ-born, MNL-raised resident of Miami, FL. Just your average pantomath-aspiring philomath-polymath.</p>
-                </article>
-            </section>
-        <!-- </div> -->
-
-        <!-- <div class="wrapper"> -->
-            <section class="group wrapper" id="about-me">
-                <article class="item padding">
-                    <h2 class="h2-default">About Me</h2>
-                    <hr>
-                    <p class="left text-default">I am an accounting and administrative assistant for Moon Thai Group, the umbrella company that owns Moon Thai & Japanese and Ohho in Florida. Previously, I was a content and financial analyst and, very briefly, an economic researcher. Possessed with an inherently inquisitive, highly-imaginative mind, I would always find myself engaged in the pursuit of knowledge and over the moon in mental stimulation. I delved into social sciences and aspired to be a researcher.</p>
-                    <p class="left text-default">To most, it was an aspiration that was very one-sided in a left-brain kind of way. Ruled by logic and methodology, there was no room for creativity. I begged to differ; it wasn't a science-and-church-separation kind of way.</p>
-                    <p class="left text-default">I was fascinated by the idea of the expression of creativity through the application of logic. It’s really not at all impossible. In fact, this was how I stumbled upon software development. After all, haven’t they always been two sides of the same coin that is software development? Or better yet, its essence?</p>
-                    <p class="left text-default">And before I knew it, I have found my niche: to be a software developer. To engage in the creation of meaning through the marriage of logic and creativity. I hope to continue to grow as a developer and to learn from great programmers, whom I hope to have the chance to work alongside with.</p>
-                    <p class="left text-default">Outside of my professional life, I am also a bartender and an occasional mixologist, bibliophile, music-lover-worshipper, aspiring photographer*, and all-around nerd.</p>
-                    <p class="left text-default">*All photos are mine.</p>
-                </article>
-            </section>
-        <!-- </div> -->
-
-        <!-- <div class="wrapper"> -->
-            <section class="group wrapper" id="services">
-                <article class="item padding">
-                    <h2 class="h2-default">Services</h2>
-                    <hr>
-                    <h3 class="h3-default">Front-End Web Development</h3>
-                    <ul class="text-default">
-                        <li>HTML, CSS, JavaScript ES6, JQuery, React</li>
-                    </ul>
-                    <h3 class="h3-default">Back-End Web Development</h3>
-                    <ul class="text-default">
-                        <li>Express, Node.js, PostgreSQL</li>
-                    </ul>
-                    <h3 class="h3-default">Dev Tools</h3>
-                    <ul class="text-default">
-                        <li>Chai, Enzyme, Git & GitHub, Heroku, Jest, Mocha, Supertest, Vercel, Webpack</li>
-                    </ul>
-                    <h3 class="h3-default">Additional Skills</h3>
-                    <ul class="text-default">
-                        <li>RESTful APIs, Unit Testing, Algorithms, Data Structures</li>
-                    </ul>
-                    
-                </article>
-            </section>
-        <!-- </div> -->
-
-        <!-- This part needs to be redone -->
-        <div class="wrapper">
-            <!-- This is an item -->
-            <h2 class="h2-default project-head-padding">
-                Existing Projects
+        <section>
+            <article class="center padding">
+                <img src="images/profile-square.jpg" alt="Profile Photo" class="portrait">
+                <h2>Hello there.</h2>
                 <hr>
-            </h2>
-            <!-- This is an item that is also a group -->
-            <section class="toggle-project-group" id="projects">
-                <!-- This is an item that is inside an item-group -->
-                <article class="project-padding">
-                    <p class="center"><img src="images/bookmarks-app-screenshot.jpg" alt="Site Bookmarking App Screenshots" class="project-screenshot"></p>
-                    <h3 class="h2-default">Site Bookmarking App</h3>
-                    <hr class="partial-width">
-                    <ul class="partial-width text-default">
-                        <li>Description: A JQuery simple site-bookmarking app featuring the four basic functions of CRUD and a RESTful API architecture</li>
+                <p>My name is Michelle, twenty-seven, and an aspiring software developer, economist, and researcher. NJ-born, MNL-raised resident of Miami, FL. Just your average pantomath-aspiring philomath-polymath.</p>
+            </article>
+        </section>
+
+        <section id="about-me">
+            <article class="padding">
+                <h2>About Me</h2>
+                <hr>
+                <p>I am an accounting and administrative assistant for Moon Thai Group, the umbrella company that owns Moon Thai & Japanese and Ohho in Florida. Previously, I was a content and financial analyst and, very briefly, an economic researcher. Possessed with an inherently inquisitive, highly-imaginative mind, I would always find myself engaged in the pursuit of knowledge and over the moon in mental stimulation. I delved into social sciences and aspired to be a researcher.</p>
+                <p>To most, it was an aspiration that was very one-sided in a left-brain kind of way. Ruled by logic and methodology, there was no room for creativity. I begged to differ; it wasn't a science-and-church-separation kind of way.</p>
+                <p>I was fascinated by the idea of the expression of creativity through the application of logic. It’s really not at all impossible. In fact, this was how I stumbled upon software development. After all, haven’t they always been two sides of the same coin that is software development? Or better yet, its essence?</p>
+                <p>And before I knew it, I have found my niche: to be a software developer. To engage in the creation of meaning through the marriage of logic and creativity. I hope to continue to grow as a developer and to learn from great programmers, whom I hope to have the chance to work alongside with.</p>
+                <p>Outside of my professional life, I am also a bartender and an occasional mixologist, bibliophile, music-lover-worshipper, aspiring photographer*, and all-around nerd.</p>
+                <p>*All photos are mine.</p>
+            </article>
+        </section>
+
+        <section class="padding" id="services">
+            <article>
+                <h2>Services</h2>
+                <hr>   
+                <ol>
+                    <li>
+                        <h3 class="left">Front-End Web Development</h3>
+                    </li>
+                        <ul>
+                            <li>HTML, CSS, JavaScript ES6, JQuery, React</li>
+                        </ul>
+                    <li>
+                        <h3 class="left">Back-End Web Development</h3>
+                    </li>
+                        <ul>
+                            <li>Express, Node.js, PostgreSQL</li>
+                        </ul>
+                    <li>
+                        <h3 class="left">Dev Tools</h3>
+                    </li>
+                        <ul>
+                            <li>Chai, Enzyme, Git & GitHub, Heroku, Jest, Mocha, Supertest, Vercel, Webpack</li>
+                        </ul>
+                    <li>
+                        <h3 class="left">Additional Skills</h3>
+                    </li>
+                        <ul>
+                            <li>RESTful APIs, Unit Testing, Algorithms, Data Structures</li>
+                        </ul>
+                </ol>
+            </article>
+        </section>
+
+        <section class="padding" id="projects">
+            <h2>Existing Projects</h2>
+            <hr>
+            <div class="group">
+                <article class="project-group">
+                    <img src="images/bookmarks-app-screenshot.jpg" alt="Site Bookmarking App Screenshots" >
+                    <h3>Site Bookmarking App</h3>
+                    <hr>
+                    <ul>
+                        <li>A JQuery simple site-bookmarking app featuring the four basic functions of CRUD and a RESTful API architecture</li>
                         <li>HTML, CSS, JavaScript ES6, JQuery, and a RESTful API architecture</li>
                         <li><a href="https://github.com/mischkiey/bookmarks-app">Link to GitHub Repo</a></li>
                         <li><a href="https://mischkiey.github.io/bookmarks-app/">Link to Live App</a></li>
                     </ul>
                 </article>
-                <!-- This is another item that is inside an item-group -->
-                <article class="project-padding">
-                    <p class="center"><img src="images/acclimate-app-screenshots.jpg" alt="Acclimate App Screenshots" class="project-screenshot"></p>
-                    <h3 class="h2-default">Acclimate: Disaster Management App</h3>
-                    <hr class="partial-width">
-                    <ul class="partial-width text-default">
-                        <li>A fully responsive, full-stack information and utility disaster management app</li>
-                        <li>CSS, JavaScript ES6, React, Express, Node.js, PostgreSQL, Chai, Heroku, Jest, Mocha, Supertest, Vercel, basic UI/UX design, and a RESTful API architecture</li>
-                        <li><a href="https://github.com/mischkiey/acclimate-app-client">Link to Front-End GitHub Repo</a></li>
-                        <li><a href="https://github.com/mischkiey/acclimate-app-server">Link to Back-End GitHub Repo</a></li>
-                        <li><a href="https://acclimate-app.vercel.app/dashboard">Link to Live App</a></li>
+                <article class="project-group">
+                    <img src="images/acclimate-app-screenshots.jpg" alt="Acclimate App Screenshots" >
+                    <h3>Acclimate: Disaster Management App</h3>
+                    <hr>
+                    <ul>
+                        <li>A JQuery simple site-bookmarking app featuring the four basic functions of CRUD and a RESTful API architecture</li>
+                        <li>HTML, CSS, JavaScript ES6, JQuery, and a RESTful API architecture</li>
+                        <li><a href="https://github.com/mischkiey/bookmarks-app">Link to GitHub Repo</a></li>
+                        <li><a href="https://mischkiey.github.io/bookmarks-app/">Link to Live App</a></li>
                     </ul>
                 </article>
-            </section>
-        </div>
-
-        <div class="wrapper">
-            <div class="bg-img-thanks group-column parallax">
             </div>
+        </section>
+
+        <div class="bg-img-foot parallax">
         </div>
 
-        <div class="wrapper">
-            <section class="group" id="contact-me">
-                <article class="item padding">
-                    <h2 class="h2-default">Get in Touch</h2>
-                    <hr>
-                    <form action="https://formspree.io/mischkieycf@gmail.com" method="post" class="form form-width">
-                        <label for="user-name">Your Name:</label>
-                        <input id="user-name" type="text" name="name">
-                        <label for="user-email">Your Email:</label>
-                        <input id="user-email" type="text" name="email">
-                        <label for="user-message">Your Message:</label>
-                        <textarea id="user-message" name="message"></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-                </article>
-            </section>
-        </div>
+        <section class="padding" id="contact-me">
+            <article class="">
+                <h2>Get in Touch</h2>
+                <hr>
+                <form action="https://formspree.io/mischkieycf@gmail.com" method="post">
+                    <label for="username">Your Name:</label>
+                    <input id="username" type="text" name="name">
+                    <label for="email">Your Email:</label>
+                    <input id="email" type="text" name="email">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <div class="center">
+                        <button type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </article>
+        </section>
 
-        <div class="wrapper">
-            <footer class="border group">
-                <div class="item footer-padding">
-                    <p><a href="mailto:" class="link-default">Email: myemail@email.com</a></p>
-                    <p><a href="tel:" class="link-default">Phone: +1XXX-XXX-XXXX</a></p>
-                    <p><a href="https://github.com/mischkiey" class="link-default">Github</a></p>
-                    <p><a href="https://www.linkedin.com/in/michellecfrancisco/" class="link-default">LinkedIn</a></p>
-                    <p><a href="https://www.instagram.com/mischkiey/" class="link-default">Copyright Photos</a></p>
-                </div>
-            </footer>
-        </div>
+        <footer class="footer-group padding">
+            <a href="mailto:mischkieycf@gmail.com" class="foot-link">Email</a>
+            <a href="tel:+17864919819" class="foot-link">Phone</a>
+            <a href="https://github.com/mischkiey" class="foot-link">Github</a>
+            <a href="https://www.linkedin.com/in/michellecfrancisco/" class="foot-link">LinkedIn</a>
+            <a href="https://www.instagram.com/mischkiey/" class="foot-link">Copyright Photos</a>
+        </footer>
     </main>
 
 </body>

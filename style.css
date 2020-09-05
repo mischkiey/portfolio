@@ -1,9 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Raleway&family=Roboto:wght@300;400&display=swap');
-
-/* For enhanced readability: 
-Classes and selectors are arranged in the order that they appear in the HTML page. */
 
 html {
     scroll-behavior: smooth;
@@ -13,103 +8,168 @@ html {
     filter: sepia(4%);
 }
 
-/* Mobile-first Approach Start */
-
-/* Flex Properties Start */
-
-.wrapper {
-    width: 100%;
-    margin: auto;
-}
-
-.group-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.group-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.item {
-    flex: 1;
-}
-
-.toggle-nav-group {
-    background-color: #E5E5E5;
-    display: flex;
-    flex-direction: column;
-}
-
-.toggle-project-group {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Flex Properties End */
-
-h1 {
-    flex: 1;
-    font-family: "Lora", serif;
-    font-size: 32px;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.nav-item {
-    flex: 1;
-    background-color: #E5E5E5;
-    text-align: center;
-    margin: 0;
-}
-
-.toggle-nav-item {
-    display: inline-block;
-    list-style-type: none;
-}
-
-nav > ul {
-    padding-left: 0px;
-}
-
-a:link { color: #000; }
-a:visited { color: #000; }
-a:hover { color: hsl(0 0% 75%); }
-a:active { color: hsl(0 0% 75%); }
-
-.link-default {
-    font-family: "Lora", serif;
-    font-size: 12px;
-}
-
-nav > ul > li > a.link-default {
-    font-size: 16px;
-    margin-right: 5px;
-    text-decoration: none;
-}
-
-.bg-img-header {
-    background-image: url(images/hollywood.jpg);
-    padding: 100px;
-}
+/* Typography */
 
 .center {
     text-align: center;
 }
 
-.parallax {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+.left {
+    text-align: left;
 }
+
+h1, h2, h3 {
+    flex: 1;
+    font-family: "Lora", serif;
+    text-align: center;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    line-height: 24px;
+    text-align: left;
+}
+
+li {
+    font-family: "Raleway", sans-serif;
+    margin: 5px;
+}
+
+a {
+    color: #212121;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+a:hover { 
+    color: #424242;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.foot-link {
+    font-family: "Lora", serif;
+    font-size: 14px;
+}
+
+/* Containers/Group */
+
+.wrapper {
+    width: 99%;
+    margin: auto;
+}
+
+.group {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.header-group {
+    background-color: #fff8e1;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.nav-group {
+    background-color: #ccc5af;
+    flex: 1;
+    text-align: center;
+}
+
+.project-group {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+
+.footer-group {
+    background-color: #ccc5af;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* Position & Sizing */
 
 .padding {
     padding: 20px;
 }
 
+.parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Specific Elements */
+
+ol, ul {
+    padding-inline-start: 20px;
+}
+
+nav > ul {
+    margin: 12px 0;
+}
+
+.nav-item {
+    display: inline-block;
+    list-style-type: none;
+}
+
 img {
-    width: 100%;
+    max-width: 80%;
+}
+
+hr {
+    border: 2px solid #212121;
+}
+
+form {
+    border-radius: 3px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+label, input, textarea, button {
+    font-family: "Raleway", sans-serif;
+    margin: 5px 0;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #212121;
+}
+
+textarea {
+    border: none;
+    border-bottom: 2px solid #212121;
+}
+
+button {
+    background-color: #212121;
+    border: 1px solid #212121;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+.bg-img-head {
+    background-image: url(images/hollywood.jpg);
+    background-position: bottom;
+    padding: 100px;
+}
+
+.bg-img-foot {
+    background-image: url(images/hollywood-metro.jpg);
+    background-position: center;
+    padding: 75px;
 }
 
 .portrait {
@@ -118,232 +178,82 @@ img {
     width: 20%;
 }
 
-.h2-default {
-    font-family: "Lora", serif;
-    /* font-size: 32px; */
-    margin: 0;
-    text-align: center;
-}
-
-.h3-default {
-    font-family: "Lora", serif;
-    /* font-size: 32px; */
-    margin: 0;
-}
-
-hr {
-    border: 2px dashed #000;
-}
-
-.partial-width {
-    width: 80%;
-    margin: auto;
-}
-
-.text-default {
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-}
-
-.left {
-    text-align: left;
-}
-
-.project-head-padding {
-    margin: 0;
-    padding: 10px 20px 0 20px;
-}
-
-.project-padding {
-    padding: 20px 0px;
-}
-
-.bg-img-thanks {
-    background-image: url(images/hollywood-metro.jpg);
-    background-position: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 75px;
-}
-
-form {
-    /* border: 1px solid #000; */
-    border-radius: 10px;
-    box-shadow: 3px 3px 7px #b6b6b6;
-    padding: 20px;
-    margin: 5px;
-}
-
-form label {
-    display: block;
-    font-family: "Lora", serif;
-    font-size: 14px;
-    text-align: left;
-}
-
-form input {
-    border: none;
-    border-bottom: 2px dashed #000;
-    height: 16px;
-    margin-bottom: 10px;
-    padding: 0;
-    width: 100%;
-}
-
-form textarea {
-    border: none;
-    border-bottom: 2px dashed #000;
-    height: 64px;
-    margin-bottom: 10px;
-    padding: 0;
-    width: 100%;
-}
-
-input[type=text], #user-message {
-    font-family: "Raleway", sans-serif;
-    font-size: 12px;
-}
-
-form button {
-    font-family: "Lora", serif;
-    font-size: 8px;
-    text-align: left;
-}
-
-footer {
-    background-color: #E5E5E5;
-}
-
-.footer-padding {
-    padding: 2px 20px;
-}
-
-/* Mobile First Approach End */
-
-/* Media Queries Start */
-
 @media all and (min-width: 1200px) {
+
+    /* Typography */
+
+    h1 {
+        align-self: center;
+        font-weight: 500;
+        margin-left: 30px;
+        text-align: left;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        margin-right: 30px;
+    }
+
+    li {
+        font-family: "Raleway", sans-serif;
+        margin: 10px;
+    }
+
+    /* Containers/Group */
 
     .wrapper {
         width: 100%;
         margin: auto;
     }
 
-    /* Flex Properties Start */
+    .group {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
 
-    .toggle-nav-group {
+    .header-group {
         display: flex;
         flex-direction: row;
     }
     
-    .nav-item {
-        flex: 2;
-        background-color: #E5E5E5;
-        text-align: right;
-        margin: 0;
-    }
-
-    .toggle-project-group {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    /* Flex Properties End */
-
-    h1 {
+    .nav-group {
         align-self: center;
-        font-size: 28px;
-        font-weight: 500;
-        margin: 0 0 0 30px;
-        text-align: left;
+        flex: 1;
+        background-color: #fff8e1;
+        text-align: right;
     }
 
-    nav > ul > li > a.link-default {
-        font-size: 20px;
-        margin-right: 30px;
+    .footer-group {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
     }
 
-    .bg-img-header {
-        background-image: url(images/hollywood.jpg);
-        padding: 300px;
+    /* Position & Sizing */
+
+    .padding {
+        padding: 100px;
     }
 
     .parallax {
         background-attachment: fixed;
     }
 
-    .padding {
-        padding: 100px;
-    }
-
-    .h2-default {
-        font-family: "Lora", serif;
-        font-size: 32px;
-        text-align: center;
-    }
-
-    .h3-default {
-        font-family: "Lora", serif;
-        /* font-size: 32px; */
-        margin: 0;
-    }
-
-    .text-default {
-        font-family: "Raleway", sans-serif;
-        font-size: 16px;
-        line-height: 32px;
-    }
-
-    .project-head-padding {
-        padding: 100px 100px 0 100px;
-    }
-
-    .project-padding {
-        padding: 20px 50px;
-    }
-
-    .project-screenshot {
-        width: 500px;
-    }
-
-    .bg-img-thanks {
-        background-image: url(images/hollywood-metro.jpg);
-        padding: 200px;
-    }
+    /* Specific Elements */
 
     form {
-        width: 50%;
+        width: 80%;
         margin: auto;
-        margin-top: 50px;
     }
 
-    form label {
-        font-size: 16px;
-    }
-    
-    form input {
-        font-size: 16px;
-        height: 32px;
-        margin-bottom: 10px;
+    label, input, textarea, button {
+        margin: 10px 0;
     }
 
-    form textarea {
-        height: 128px;
-        margin-bottom: 10px;
+    .bg-img-head {
+        padding: 300px;
     }
 
-    input[type=text], #user-message {
-        font-size: 16px;
+    .bg-img-foot {
+        padding: 200px;
     }
-
-    form button {
-        font-size: 16px;
-    }
-
-    .footer-padding {
-        padding: 20px 200px;
-    }
-
 }
