@@ -60,7 +60,7 @@ a:hover {
     font-size: 14px;
 }
 
-/* Containers/Group */
+/* Containers/Groups */
 
 .wrapper {
     width: 99%;
@@ -73,13 +73,13 @@ a:hover {
 }
 
 .header-group {
-    background-color: #fff8e1;
+    background-color: #fff3e0;
     display: flex;
     flex-flow: column wrap;
 }
 
 .nav-group {
-    background-color: #ccc5af;
+    background-color: #ccc0ae;
     flex: 1;
     text-align: center;
 }
@@ -93,7 +93,7 @@ a:hover {
 }
 
 .footer-group {
-    background-color: #ccc5af;
+    background-color: #ccc0ae;
     display: flex;
     flex-flow: column wrap;
 }
@@ -116,7 +116,7 @@ ol, ul {
 }
 
 nav > ul {
-    margin: 12px 0;
+    margin: 0;
 }
 
 .nav-item {
@@ -161,9 +161,9 @@ button {
     color: #ffffff;
 }
 
-/* button:hover {
-
-} */
+button:hover {
+    box-shadow: 1px 1px 3px 3px #e0e0e0;
+}
 
 .bg-img-head {
     background-image: url(images/hollywood.jpg);
@@ -204,7 +204,7 @@ button {
         margin: 10px;
     }
 
-    /* Containers/Group */
+    /* Containers/Groups */
 
     .wrapper {
         width: 100%;
@@ -224,7 +224,7 @@ button {
     .nav-group {
         align-self: center;
         flex: 1;
-        background-color: #fff8e1;
+        background-color: #fff3e0;
         text-align: right;
     }
 
