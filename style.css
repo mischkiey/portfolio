@@ -220,6 +220,9 @@ button:hover {
     }
 
     .header-group {
+        background-color: #FFF;
+        border-bottom: 1px solid #ADC4D1;
+        /* border-bottom: 2px solid #212121; */
         display: flex;
         flex-direction: row;
     }
@@ -227,7 +230,7 @@ button:hover {
     .nav-group {
         align-self: center;
         flex: 1;
-        background-color: #fff3e0;
+        background-color: #FFF;
         text-align: right;
     }
 
