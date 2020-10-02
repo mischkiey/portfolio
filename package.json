@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/mischkiey/portfolio/issues"
   },
-  "homepage": "https://github.com/mischkiey/portfolio#readme"
+  "homepage": "https://github.com/mischkiey/portfolio#readme",
+  "dependencies": {}
 }
