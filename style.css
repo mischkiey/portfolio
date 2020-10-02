@@ -254,10 +254,10 @@ button:hover {
 
   /* Specific Elements */
 
-  form {
+  /* form {
     width: 80%;
     margin: auto;
-  }
+  } */
 
   label, input, textarea, button {
     margin: 10px 0;
