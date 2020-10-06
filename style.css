@@ -4,6 +4,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+  color: #050505;
+}
+
 /* Typography */
 
 .center {
@@ -15,7 +19,8 @@ html {
 }
 
 h1 {
-  color: #ADC4D1;
+  /* color: #ADC4D1; */
+  color: #050505;
   font-size: 24px;
 }
 
@@ -37,7 +42,7 @@ li {
 }
 
 a {
-  color: #212121;
+  color: #050505;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   margin-right: 5px;
@@ -49,7 +54,8 @@ a:hover {
 }
 
 .nav-link {
-  color: #DEE1EA;
+  /* color: #DEE1EA; */
+  color: #050505;
   font-family: "Lora", serif;
   font-size: 16px;
   margin-right: 5px;
@@ -75,17 +81,15 @@ a:hover {
 }
 
 .header-group {
-  background-color: #050505;
+  background-color: #FFF;
   display: flex;
-  flex-flow: column wrap;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  flex-flow: column wrap; 
 }
 
 .nav-group {
-  background-color: #050505;
+  /* background-color: #050505; */
   border-top: 1px solid #ADC4D1;
+  /* border-bottom: 1px solid #ADC4D1; */
   flex: 1;
   text-align: center;
 }
@@ -98,16 +102,18 @@ a:hover {
 }
 
 .footer-group {
-  background-color: #050505;
+  background-color: #FFF;
+  border-top: 1px solid #ADC4D1;
   color: #8d919c;
   display: flex;
   flex-flow: column wrap;
+  padding: 20px;
 }
 
 /* Position & Sizing */
 
 .padding {
-  padding: 20px;
+  padding: 100px 20px;
 }
 
 .parallax {
@@ -131,7 +137,7 @@ nav > ul {
 }
 
 img {
-  max-width: 30%;
+  max-width: 80%;
 }
 
 hr {
@@ -224,15 +230,16 @@ button:hover {
   }
 
   .header-group {
-    background-color: #050505;
     display: flex;
     flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
   
   .nav-group {
     align-self: center;
     flex: 1;
-    background-color: #050505;
     border: none;
     text-align: right;
   }
@@ -240,12 +247,13 @@ button:hover {
   .footer-group {
     flex-flow: row wrap;
     justify-content: space-evenly;
+    padding: 100px 300px;
   }
 
   /* Position & Sizing */
 
   .padding {
-    padding: 100px;
+    padding: 200px 300px;
   }
 
   .parallax {
@@ -264,10 +272,14 @@ button:hover {
   }
 
   .bg-img-head {
-    padding: 300px;
+    padding: 450px;
   }
 
   .bg-img-foot {
-    padding: 200px;
+    padding: 150px;
+  }
+
+  img {
+    max-width: 50%;
   }
 }
