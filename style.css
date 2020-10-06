@@ -253,7 +253,7 @@ button:hover {
   /* Position & Sizing */
 
   .padding {
-    padding: 200px 300px;
+    padding: 200px 450px;
   }
 
   .parallax {
@@ -276,10 +276,10 @@ button:hover {
   }
 
   .bg-img-foot {
-    padding: 150px;
+    padding: 300px;
   }
 
   img {
-    max-width: 50%;
+    max-width: 40%;
   }
 }
